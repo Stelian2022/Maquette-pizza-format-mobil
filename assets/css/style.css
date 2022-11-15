@@ -1,0 +1,341 @@
+@font-face {
+  font-family: "amaticsc";
+  src: url(../font/amaticsc.woff2);
+}
+
+/* Format mobile */
+@media screen and (max-width: 576px) {
+  .hide {
+    display: none;
+  }
+}
+
+* {
+  font-family: "amaticsc";
+}
+body {
+  margin: 0%;
+  background-color: black;
+}
+
+#menuHeader{
+  display: none;
+  color: white;
+  background-color: rgba(red, green, blue, alpha);
+  position: fixed;
+  z-index: 2;
+  width: 100%;
+ 
+
+}
+#menuHeader li{
+padding: 1rem;
+}
+/* css HEADER */
+* {
+  margin: 0%;
+}
+
+h1 {
+  color: white;
+
+  height: 6rem;
+}
+h2 {
+  height: 6vh;
+  width: 29vh;
+  color: white;
+  background-color: black;
+  font-size: 2rem;
+  display: flex;
+  justify-content: center;
+  padding-top: 5px;
+  letter-spacing: 2px;
+  margin-top: 25px;
+}
+h3 {
+  margin-top: 0%;
+}
+.h2header {
+  display: flex;
+  justify-content: center;
+  height: 5rem;
+}
+
+.headerh3 {
+  font-size: 1.5rem;
+  height: 2rem;
+  background-color: black;
+  color: white;
+  width: 12rem;
+  letter-spacing: 1px;
+  position: absolute;
+  left: 10px;
+  bottom: 10px;
+}
+
+#header {
+  background-image: url(../img/pizza.jpg);
+  height: 68vh;
+  width: 100%;
+  background-repeat: no-repeat;
+  font-size: 2rem;
+  display: flex;
+  justify-content: center;
+  position: relative;
+  background-size: cover;
+  align-items: center;
+}
+
+/* MENU tests */
+
+.menu {
+  background-color: black;
+  width: 100%;
+  height: 20vh;
+  color: white;
+
+  display: flex;
+  justify-content: center;
+  padding-top: 5%;
+}
+.menu h2 {
+  font-size: 3rem;
+}
+/* TEST */
+/* .menu1 li{
+    list-style-type: none;
+  
+    font-size: 2.5rem;
+    
+    display: flex;
+    justify-content: space-between;
+    display: inline;
+    padding: 1rem;
+    border:  solid;
+    color: white;
+    background-color: black;
+    
+    margin-bottom: 50%;
+
+}  */
+
+/* test */
+/* ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    width: 60px;
+  }   */
+
+/* ul {
+    list-style-type: none;
+    
+    overflow: hidden;
+    background-color: black;
+    height: 8vh;
+    border:  1px solid;
+    border-color: rgb(53, 52, 52);
+    width: 87%;
+    margin-left: 2%;
+    margin-bottom: 0;
+    
+    } */
+
+/* Menu */
+#menupl ul {
+  display: flex;
+  list-style: none;
+
+  width: 92.6%;
+  margin-bottom: 0;
+  padding: 0;
+  border-top: 2px solid grey;
+  border-left: 2px solid grey;
+  border-right: 2px solid grey;
+  margin-left: 1.09rem;
+  
+}
+
+li {
+  display: inline;
+  flex-grow: 1;
+  text-align: center;
+  text-decoration: none;
+  font-size: 2rem;
+
+  color: white;
+  height: 60px;
+}
+
+li:hover {
+  background-color: red;
+}
+
+/* menu plats */
+.name {
+  display: flex;
+  justify-content: space-between;
+  margin: 0;
+  padding: 2%;
+  align-items: center;
+  width: 95%;
+  background-color: white;
+  color: black;
+}
+P {
+  font-size: 2rem;
+  color: grey;
+}
+
+.prix {
+  background-color: gray;
+  margin: 2%;
+  padding: 2%;
+  justify-content: flex-end;
+  color: white;
+  font-size: 1.5rem;
+  border-radius: 5%;
+}
+.hot {
+  background-color: red;
+}
+.new {
+  background-color: grey;
+}
+.menuplats {
+  border-bottom: solid grey 1px;
+  background-color: white;
+  height: 20vh;
+  width: 93%;
+  margin-left: 3%;
+}
+#pizza {
+  border-bottom: solid grey 1px;
+  background-color: white;
+  height: 20vh;
+  width: 93%;
+  margin-left: 3%;
+}
+main {
+  width: 100%;
+  background-color: black;
+  height: 160vh;
+}
+
+/* section about */
+
+.about {
+  width: 100%;
+  background-color: rgb(211, 153, 143);
+  height: 170vh;
+  margin-top: -5%;
+}
+.about h2 {
+  background: none;
+  font-size: 3.5rem;
+  padding-left: 30%;
+  padding-top: 20%;
+}
+
+.about p {
+  background: none;
+  font-size: 2rem;
+  color: white;
+}
+h4 {
+  color: white;
+  font-size: 2rem;
+  margin-bottom: 2rem;
+  width: 60%;
+}
+/* rounded image */
+img {
+  border-radius: 50%;
+}
+.imgOpen {
+  border-radius: 0%;
+  width: 93%;
+  margin-left: 3%;
+}
+.imgChef {
+  position: absolute;
+  margin-left: 60%;
+}
+h5 {
+  color: white;
+  font-size: 3rem;
+  margin: 3%;
+}
+h6 {
+  color: white;
+  font-size: 2rem;
+  margin: 3%;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+.contact {
+  height: 140vh;
+  width: 100%;
+  background-color: darkgray;
+  margin-top: -10%;
+}
+.foot {
+  font-size: 4rem;
+  padding-left: 30%;
+  padding-top: 20%;
+}
+.contact h4 {
+  width: 100%;
+  margin: 3%;
+}
+.fyi {
+  background-color: black;
+}
+.reserve {
+  font-size: 3.5rem;
+}
+#contactForm {
+  width: 96%;
+  margin: 2%;
+  margin-bottom: 20%;
+}
+#contactForm input {
+  width: 93%;
+  padding: 0.7rem;
+  margin: 0.5rem;
+  height: 3.5rem;
+  font-size: 2rem;
+}
+#contactForm button {
+  width: 97.5%;
+  padding: 0.7rem;
+  margin: 0.5rem;
+  height: 3.5rem;
+  font-size: 2rem;
+}
+.footer {
+  font-size: 3rem;
+  width: 100%;
+  height: 20vh;
+  background-color: black;
+  color: white;
+
+  text-align: center;
+  padding-top: 60px;
+}
+
+
+
+
+
+
+
+@media screen and (min-width: 576px) {
+ 
+#menuHeader {
+    display: block;
+   }
+ 
+}
