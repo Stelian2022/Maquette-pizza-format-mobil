@@ -4,33 +4,73 @@
 }
 
 /* Format mobile */
-@media screen and (max-width: 576px) {
-  .hide {
-    display: none;
-  }
-}
 
 * {
   font-family: "amaticsc";
 }
+
 body {
   margin: 0%;
   background-color: black;
 }
 
-#menuHeader{
-  display: none;
-  color: white;
-  background-color: rgba(red, green, blue, alpha);
+/* menu responsive */
+
+#menuHeader {
+  display: flex;
+
+  justify-content: space-between;
   position: fixed;
   z-index: 2;
-  width: 100%;
- 
+}
+#menuHeader li {
+  font-size: 1.5rem;
+  margin-left: 15px;
+  color: white;
+  letter-spacing: 2px;
+}
 
+#menuHeader ul {
+  width: 100px;
+  list-style-type: none;
+  position: absolute;
+  border: none;
+  top: 60px;
+  background-color: rgba(red, green, blue, alpha);
+  padding: 0;
+  margin: 0;
+  display: flex;
+  flex-direction: column;
+
+  max-height: 0;
+  overflow: hidden;
+  transition: all 0.5s;
 }
-#menuHeader li{
-padding: 1rem;
+#brand,
+#burger {
+  padding: 0.5rem;
 }
+
+#burger {
+  color: black;
+  font-size: 2rem;
+
+  border: solid 1px;
+}
+#box:checked ~ ul {
+  max-height: 20vh;
+  /* background-color: blue; */
+}
+#box {
+  display: none;
+}
+#box:not(:checked) ~ ul {
+  max-height: 0;
+  /* background-color: red; */
+}
+
+/* fin menu responsive */
+
 /* css HEADER */
 * {
   margin: 0%;
@@ -85,6 +125,9 @@ h3 {
   position: relative;
   background-size: cover;
   align-items: center;
+}
+header {
+  position: relative;
 }
 
 /* MENU tests */
@@ -143,21 +186,30 @@ h3 {
     } */
 
 /* Menu */
+
+#menupl {
+  display: flex;
+  justify-content: center;
+  padding: 1rem;
+  padding-bottom: 0%;
+}
+main {
+  margin-left: 2.5%;
+}
 #menupl ul {
   display: flex;
+
   list-style: none;
 
-  width: 92.6%;
-  margin-bottom: 0;
+  width: 100%;
+
   padding: 0;
   border-top: 2px solid grey;
   border-left: 2px solid grey;
   border-right: 2px solid grey;
-  margin-left: 1.09rem;
-  
 }
 
-li {
+#menupl li {
   display: inline;
   flex-grow: 1;
   text-align: center;
@@ -168,7 +220,7 @@ li {
   height: 60px;
 }
 
-li:hover {
+#menupl li:hover {
   background-color: red;
 }
 
@@ -210,13 +262,14 @@ P {
   width: 93%;
   margin-left: 3%;
 }
-#pizza {
+
+#pizza .menuplats {
   border-bottom: solid grey 1px;
   background-color: white;
   height: 20vh;
-  width: 93%;
-  margin-left: 3%;
+  width: 100%;
 }
+
 main {
   width: 100%;
   background-color: black;
@@ -229,7 +282,8 @@ main {
   width: 100%;
   background-color: rgb(211, 153, 143);
   height: 170vh;
-  margin-top: -5%;
+  margin-top: 0%;
+  margin-left: 1rem;
 }
 .about h2 {
   background: none;
@@ -279,7 +333,8 @@ h6 {
   height: 140vh;
   width: 100%;
   background-color: darkgray;
-  margin-top: -10%;
+  margin-top: 0;
+  margin-left: 1rem;
 }
 .foot {
   font-size: 4rem;
@@ -326,16 +381,61 @@ h6 {
   padding-top: 60px;
 }
 
-
-
-
-
-
-
 @media screen and (min-width: 576px) {
- 
-#menuHeader {
+  #menuHeader {
     display: block;
-   }
- 
+  }
+  #menupl ul {
+    display: flex;
+
+    list-style: none;
+
+    padding: 0;
+    border-top: 2px solid grey;
+    border-left: 2px solid grey;
+    border-right: 2px solid grey;
+    margin-left: 1.1rem;
+  }
+  body {
+    position: relative;
+  }
+  main {
+    margin: 0;
+  }
+  #menupl {
+    position: absolute;
+    width: 100%;
+    position: center;
+    top: 14vh;
+  }
+  #pizza {
+    position: absolute;
+
+    width: 94%;
+    position: center;
+  }
+  .about {
+    height: 220vh;
+  }
+
+  #menuHeader label {
+    display: none;
+  }
+  #menuHeader ul {
+    position: static;
+    width: fit-content;
+    flex-direction: row;
+    color: white;
+  }
+  #box:not(:checked) ~ ul {
+    max-height: 20vh;
+    /* background-color: red; */
+  }
+  #menuHeader li {
+    font-size: 2rem;
+    padding: 1rem;
+  }
+  #menuHeader:hover {
+    background-color: none;
+  }
 }

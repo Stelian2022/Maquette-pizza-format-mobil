@@ -6,10 +6,25 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Maquette pizza</title>
     <link rel="stylesheet" href="./assets/css/style.css" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.1/css/all.min.css"
+      integrity="sha512-MV7K8+y+gLIBoVD59lQIYicR65iaqukzvf/nwasF0nqhPay5w/9lJmVM2hMDcnK1OnMGCdVK+iQrJ7lzPJQd1w=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
   </head>
   <body>
     <header>
       <nav id="menuHeader">
+        <div id="brand"></div>
+        <label for="box">
+          <div id="burger">
+            <i class="fa-solid fa-bars"></i>
+            <!-- <img src="./assets/css/img/bars-solid.svg" alt=""> -->
+          </div>
+        </label>
+        <input type="checkbox" id="box" />
         <ul>
           <li>HOME</li>
           <li>MENU</li>
@@ -38,18 +53,18 @@
     </header>
 
     <main>
-      <div class="menu">
-        <h2>THE MENU</h2>
-      </div>
-      <div id="menupl">
-        <ul>
-          <li>PIZZA</li>
-          <li>SALADS</li>
-          <li>STARTER</li>
-        </ul>
-      </div>
-
       <div id="pizza">
+        <div class="menu">
+          <h2>THE MENU</h2>
+        </div>
+        <div id="menupl">
+          <ul>
+            <li>PIZZA</li>
+            <li>SALADS</li>
+            <li>STARTER</li>
+          </ul>
+        </div>
+
         <div class="menuplats">
           <h2 class="name">Margherita <span class="prix">$12.50</span></h2>
           <p>
@@ -60,43 +75,46 @@
             >
           </p>
         </div>
-      </div>
 
-      <div class="menuplats">
-        <h2 class="name">Formaggio <span class="prix">$15.50</span></h2>
-        <p>
-          four cheeses (mozzarella,parmeson,<br />
-          pecorino,jarlberg)
-        </p>
-      </div>
+        <div class="menuplats">
+          <h2 class="name">Formaggio <span class="prix">$15.50</span></h2>
+          <p>
+            four cheeses (mozzarella,parmeson,<br />
+            pecorino,jarlberg)
+          </p>
+        </div>
 
-      <div class="menuplats">
-        <h2 class="name">Chicken <span class="prix">$17.00</span></h2>
-        <p>Fresh tomatoes, mozzarelaa, chicken, <br />onions</p>
-      </div>
-      <div class="menuplats">
-        <h2 class="name">Pineapple'o'clock <span class="prix">$16.50</span></h2>
-        <p>
-          Fresh tomatoes, mozzarella, fresh pineapple,<br />
-          bacon, fresh basil
-        </p>
-      </div>
-      <div class="menuplats">
-        <h2 class="name">
-          <span class="special"> Meat Town <span class="hot">Hot!</span> </span
-          ><span class="prix">$20.00</span>
-        </h2>
-        <p>
-          Fresh tomatoes,mozzarela,hot pepporoni, <br />hot sausage, beef,
-          chicken
-        </p>
-      </div>
-      <div class="menuplats">
-        <h2 class="name">
-          <span class="special"> Parma <span class="new">new</span></span>
-          <span class="prix">$21.50</span>
-        </h2>
-        <p>Fresh tomatoes, mozzarella, parma, bacon, <br />fresh arugula</p>
+        <div class="menuplats">
+          <h2 class="name">Chicken <span class="prix">$17.00</span></h2>
+          <p>Fresh tomatoes, mozzarelaa, chicken, <br />onions</p>
+        </div>
+        <div class="menuplats">
+          <h2 class="name">
+            Pineapple'o'clock <span class="prix">$16.50</span>
+          </h2>
+          <p>
+            Fresh tomatoes, mozzarella, fresh pineapple,<br />
+            bacon, fresh basil
+          </p>
+        </div>
+        <div class="menuplats">
+          <h2 class="name">
+            <span class="special">
+              Meat Town <span class="hot">Hot!</span> </span
+            ><span class="prix">$20.00</span>
+          </h2>
+          <p>
+            Fresh tomatoes,mozzarela,hot pepporoni, <br />hot sausage, beef,
+            chicken
+          </p>
+        </div>
+        <div class="menuplats">
+          <h2 class="name">
+            <span class="special"> Parma <span class="new">new</span></span>
+            <span class="prix">$21.50</span>
+          </h2>
+          <p>Fresh tomatoes, mozzarella, parma, bacon, <br />fresh arugula</p>
+        </div>
       </div>
     </main>
 
