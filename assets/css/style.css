@@ -132,7 +132,7 @@ header {
 
 /* MENU tests */
 
-.menu {
+#menu {
   background-color: black;
   width: 100%;
   height: 20vh;
@@ -141,49 +141,13 @@ header {
   display: flex;
   justify-content: center;
   padding-top: 5%;
+  
+  
 }
 .menu h2 {
   font-size: 3rem;
 }
-/* TEST */
-/* .menu1 li{
-    list-style-type: none;
-  
-    font-size: 2.5rem;
-    
-    display: flex;
-    justify-content: space-between;
-    display: inline;
-    padding: 1rem;
-    border:  solid;
-    color: white;
-    background-color: black;
-    
-    margin-bottom: 50%;
 
-}  */
-
-/* test */
-/* ul {
-    list-style-type: none;
-    margin: 0;
-    padding: 0;
-    width: 60px;
-  }   */
-
-/* ul {
-    list-style-type: none;
-    
-    overflow: hidden;
-    background-color: black;
-    height: 8vh;
-    border:  1px solid;
-    border-color: rgb(53, 52, 52);
-    width: 87%;
-    margin-left: 2%;
-    margin-bottom: 0;
-    
-    } */
 
 /* Menu */
 
@@ -192,9 +156,13 @@ header {
   justify-content: center;
   padding: 1rem;
   padding-bottom: 0%;
+  
+
+ 
+  
 }
 main {
-  margin-left: 2.5%;
+  margin: 0;
 }
 #menupl ul {
   display: flex;
@@ -225,6 +193,9 @@ main {
 }
 
 /* menu plats */
+#pizza{
+  width: 94%;
+}
 .name {
   display: flex;
   justify-content: space-between;
